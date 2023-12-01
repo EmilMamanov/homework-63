@@ -40,3 +40,183 @@
 .read-the-docs {
   color: #888;
 }
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: bisque;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #555;
+}
+
+.blog-list {
+  margin-top: 20px;
+}
+
+.blog-list > div {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.blog-list h2 {
+  margin-bottom: 10px;
+}
+
+.blog-list p {
+  margin-bottom: 10px;
+}
+
+.read-more {
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.read-more:hover {
+  background-color: #555;
+}
+
+.delete-btn {
+  background-color: #d9534f;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #c9302c;
+}
+
+.single-post {
+  margin-top: 20px;
+}
+
+.single-post-div {
+  border: 1px solid #bbaeae;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: burlywood;
+  border-radius: 20px;
+}
+
+.single-post h2 {
+  margin-bottom: 10px;
+}
+
+.single-post p {
+  margin-bottom: 10px;
+}
+
+.edit-btn {
+  text-decoration: none;
+  background-color: #5bc0de;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.edit-btn:hover {
+  background-color: #46b8da;
+}
+
+.create-edit-form {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.create-edit-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.create-edit-form input,
+.create-edit-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.create-edit-form button {
+  background-color: #5cb85c;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-edit-form button:hover {
+  background-color: #4cae4c;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.description-input {
+  min-height: 100px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.inputs {
+  margin-top: 20px;
+}

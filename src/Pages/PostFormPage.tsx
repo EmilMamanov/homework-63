@@ -1,5 +1,4 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import PostForm from '../components/PostForm';
 import '../App.css';
 import { Link } from 'react-router-dom';
@@ -9,7 +8,7 @@ interface PostFormPageProps {
 }
 
 const PostFormPage: React.FC<PostFormPageProps> = ({ isEditing }) => {
-    const { id } = useParams<{ id?: string }>();
+
 
     return (
         <div>
