@@ -6,7 +6,7 @@ import '../App.css';
 interface Post {
     id: string;
     title: string;
-    createdAt: string;
+    createdTime?: string;
     body: string;
 }
 
@@ -42,12 +42,11 @@ const SinglePost: React.FC = () => {
     };
 
     return (
-
         <div>
             {post && (
                 <div className="single-post-div">
                     <h2>{post.title}</h2>
-                    <p>{post.createdAt}</p>
+                    <p>{post.createdTime}</p>
                     <p>{post.body}</p>
                     <Link className="edit-btn" to={`/posts/${id}/edit`}>Edit</Link>
                     <button className="delete-btn" onClick={handleDelete}>Delete</button>

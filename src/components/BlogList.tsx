@@ -6,7 +6,7 @@ import '../App.css';
 interface Post {
     id: string;
     title: string;
-    createdAt: string;
+    createdTime: string;
     body: string;
 }
 
@@ -69,7 +69,7 @@ const BlogList: React.FC = () => {
             {posts.map((post) => (
                 <div className="single-post-div" key={post.id}>
                     <h2>{post.title}</h2>
-                    <p>{post.createdAt}</p>
+                    <p>{post.createdTime}</p>
                     <p>{post.body.length > 30 ? `${post.body.slice(0, 30)}...` : post.body}</p>
                     <Link className="read-more" to={`/posts/${post.id}`}>Read More</Link>
                     <button className="delete-btn" onClick={() => handleDelete(post.id)}>Delete</button>
